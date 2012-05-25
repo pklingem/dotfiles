@@ -1,0 +1,14 @@
+--type-add
+ruby=haml
+--type-add
+ruby=rake
+--type-add
+ruby=coffee
+--type-add
+ruby=js
+--type-add
+ruby=mustache
+--type-add
+ruby=feature
+--ignore-dir
+coverage

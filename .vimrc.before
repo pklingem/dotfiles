@@ -1,0 +1,7 @@
+" Set <leader> to ',' and <localleader> to "\"
+" let mapleader=","
+" let maplocalleader="\\"
+imap <C-l> <Space>=><Space>
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/coverage/*
+" let g:Powerline_symbols = 'fancy'
+let g:NERDTreeWinSize = 30

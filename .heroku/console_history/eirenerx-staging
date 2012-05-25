@@ -1,0 +1,22 @@
+PatientBasket.find_by_order_id('49638')
+basket = _
+basket = PatientBasket.find_by_order_id('49638')
+basket.update_attribute('created_at', DateTime.today)
+basket.update_attribute('created_at', DateTime.new)
+basket
+Datenew
+Date.new
+DateTime.now
+basket.update_attribute('created_at', DateTime.now)
+basket
+PatientBasket.find_by_order_id('49623')
+basket.update_attribute('created_at', DateTime.now)
+PatientBasket.find_by_order_id('49623')
+basket = PatientBasket.find_by_order_id('49623')
+basket.update_attribute('created_at', DateTime.now)
+Prescription.find_by_script_no('6011632')
+ClinicalRule.all
+ClinicalRule.last
+cr = ClinicalRule.last
+cr.delete
+exit
