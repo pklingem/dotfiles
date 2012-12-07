@@ -10,5 +10,7 @@ ruby=js
 ruby=mustache
 --type-add
 ruby=feature
+--type-add
+ruby=slim
 --ignore-dir
 coverage

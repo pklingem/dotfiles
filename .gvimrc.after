@@ -1,2 +1,11 @@
-set guioptions+=TLlRrb
-set guioptions-=TLlRrb
+set background=dark
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
+
+map <A-w> :tabclose<CR>
+set lines=45 columns=120
+set guioptions+=mTLlRrb
+set guioptions-=mTLlRrb
