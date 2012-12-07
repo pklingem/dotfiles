@@ -1,0 +1,5 @@
+.heroku/plugins
+.heroku/autoupdate.last
+.heroku/autoupdate.log
+.heroku/client
+.heroku/usage
