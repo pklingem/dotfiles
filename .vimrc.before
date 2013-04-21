@@ -1,2 +1,5 @@
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-let g:Powerline_symbols = 'fancy'
+let NERDTreeHijackNetrw=1
+" set guifont=DejaVu\ Sans\ Mono
+" let g:Powerline_symbols = 'fancy'
+
+vmap ,x :!tidy -q -i --show-errors 0<CR>

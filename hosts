@@ -1,0 +1,14 @@
+127.0.0.1		localhost.localdomain localhost
+127.0.0.1		app.example.com
+127.0.0.1		www.example.com
+127.0.0.1               one.ao.dev
+127.0.0.1               two.ao.dev
+127.0.0.1               www.capecoddev.com
+::1		localhost6.localdomain6 localhost6
+50.56.174.56    fluffhead
+199.91.201.98   quartz
+76.26.211.249   castlehall
+25.237.126.83   smilodon
+50.17.123.77    capecoddev.com
+50.17.123.77    one.capecoddev.com
+50.17.123.77    two.capecoddev.com

@@ -12,5 +12,9 @@ ruby=mustache
 ruby=feature
 --type-add
 ruby=slim
+--type-add
+ruby=less
+--type-add
+ruby=hbs
 --ignore-dir
 coverage
