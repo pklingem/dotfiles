@@ -9,5 +9,6 @@ stow rubygems
 stow git
 stow ssh
 stow janus
+stow powerline
 
 source ~/.bash_profile
