@@ -1,8 +1,13 @@
 #!/bin/bash
 
+cd ~/dotfiles
+
+stow bin
 stow bash-`uname`
 stow chef
 stow rubygems
 stow git
 stow ssh
 stow janus
+
+source ~/.bash_profile
