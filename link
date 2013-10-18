@@ -1,0 +1,10 @@
+#!/bin/bash
+
+stow bash-`uname`
+stow chef
+stow gem
+stow git
+stow ssh
+stow janus
+
+sh -c 'cd .janus && git submodule init && git submodule update'
