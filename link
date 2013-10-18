@@ -1,0 +1,8 @@
+#!/bin/bash
+
+stow bash-`uname`
+stow chef
+stow rubygems
+stow git
+stow ssh
+stow janus
