@@ -3,12 +3,13 @@
 cd ~/dotfiles
 
 stow bin
-stow bash-`uname`
+stow bash
 stow chef
 stow rubygems
 stow git
 stow ssh
 stow janus
 stow powerline
+stow fontconfig
 
 source ~/.bash_profile
