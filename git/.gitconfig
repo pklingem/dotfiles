@@ -1,3 +1,6 @@
 [user]
 	email = patrick.klingemann@gmail.com
 	name = Patrick Klingemann
+
+[color]
+  ui = auto
