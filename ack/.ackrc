@@ -18,3 +18,7 @@ ruby=less
 ruby=hbs
 --ignore-dir
 coverage
+--ignore-dir
+vendor/bundle
+--ignore-dir
+log
