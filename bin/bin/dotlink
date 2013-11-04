@@ -2,6 +2,7 @@
 
 cd ~/dotfiles
 
+stow ack
 stow bin
 stow bash
 stow chef
