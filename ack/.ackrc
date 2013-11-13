@@ -16,6 +16,8 @@ ruby=slim
 ruby=less
 --type-add
 ruby=hbs
+--type-add
+ruby=eco
 --ignore-dir
 coverage
 --ignore-dir
