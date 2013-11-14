@@ -6,3 +6,5 @@ fi
 export PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+eval `dircolors ~/.config/ls/dircolors-solarized/dircolors.256dark`

@@ -13,3 +13,6 @@
 [submodule "janus/.janus/vim-dispatch"]
 	path = janus/.janus/vim-dispatch
 	url = git@github.com:tpope/vim-dispatch
+[submodule "ls/.config/ls/dircolors-solarized"]
+	path = ls/.config/ls/dircolors-solarized
+	url = git@github.com:seebi/dircolors-solarized

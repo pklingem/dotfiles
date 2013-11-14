@@ -12,5 +12,6 @@ stow ssh
 stow janus
 stow powerline
 stow fontconfig
+stow ls
 
 source ~/.bash_profile
