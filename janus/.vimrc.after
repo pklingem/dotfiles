@@ -40,3 +40,7 @@ map <leader>c :Gcommit<CR>
 autocmd FileType ruby let b:dispatch = 'bundle exec rspec %'
 autocmd FileType coffee let b:dispatch = 'bundle exec guard-jasmine --console=always %'
 nnoremap <F9> :Dispatch<CR>
+
+" vimrc editing/updating
+nmap <leader>sv :so $MYVIMRC<CR>
+nmap <leader>ev :e ~/.vimrc.after<CR>
