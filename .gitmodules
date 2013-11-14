@@ -10,3 +10,6 @@
 [submodule "janus/.janus/vim-tmux-navigator"]
 	path = janus/.janus/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator.git
+[submodule "janus/.janus/vim-dispatch"]
+	path = janus/.janus/vim-dispatch
+	url = git@github.com:tpope/vim-dispatch

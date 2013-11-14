@@ -35,3 +35,8 @@ highlight link SignColumn CursorColumn
 
 map <leader>s :Gstatus<CR>
 map <leader>c :Gcommit<CR>
+
+" vim-dispatch config
+autocmd FileType ruby let b:dispatch = 'bundle exec rspec %'
+autocmd FileType coffee let b:dispatch = 'bundle exec guard-jasmine --console=always %'
+nnoremap <F9> :Dispatch<CR>
