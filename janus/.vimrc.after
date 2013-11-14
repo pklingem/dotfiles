@@ -16,11 +16,6 @@ augroup CursorLine
   " au WinLeave * setlocal nocursorcolumn
 augroup END
 
-" Enable more reasonable shortcuts for swapping windows
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
 
 " Shortcut to clear search highlighting
 map <leader>x :nohlsearch<CR>
