@@ -30,7 +30,8 @@ map <A-d> "+x
 
 " vim-gitgutter color improvements
 highlight clear SignColumn
-highlight link SignColumn CursorColumn
+" this one isn't working
+"highlight link SignColumn CursorColumn
 
 map <leader>s :Gstatus<CR>
 map <leader>c :Gcommit<CR>
