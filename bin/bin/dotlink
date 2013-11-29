@@ -2,6 +2,8 @@
 
 cd ~/dotfiles
 
+# ls -d * | sed s/\ \ /\\n/g
+
 stow ack
 stow bin
 stow bash
