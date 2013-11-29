@@ -15,6 +15,8 @@ ruby=slim
 --type-add
 ruby=less
 --type-add
+ruby=sass
+--type-add
 ruby=hbs
 --type-add
 ruby=eco
