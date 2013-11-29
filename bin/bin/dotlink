@@ -15,5 +15,6 @@ stow janus
 stow powerline
 stow fontconfig
 stow ls
+stow tmux
 
 source ~/.bash_profile
