@@ -16,5 +16,6 @@ stow powerline
 stow fontconfig
 stow ls
 stow tmux
+stow rspec
 
 source ~/.bash_profile
