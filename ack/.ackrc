@@ -26,3 +26,5 @@ coverage
 vendor/bundle
 --ignore-dir
 log
+--ignore-dir
+tmp
