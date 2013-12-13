@@ -7,5 +7,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 alias scorm-provision="knife ssh -i ~/.ssh/perfectscorm.pem name:scorm-engine-acceptance-1 \"sudo chef-client\" -x ubuntu"
 alias scorm-ssh="ssh -i ~/.ssh/perfectscorm.pem ubuntu@perfectscorm.com"
+alias be="bundle exec"
+alias befr="bundle exec foreman run"
 
 source ~/.bash_profile.`uname`
