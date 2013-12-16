@@ -1,0 +1,23 @@
+session:
+  name: rise
+  windows:
+    - name: server
+      root: ~/code/rise
+      panes:
+        - cmd: "be rails s"
+    - name: console
+      root: ~/code/rise
+      panes:
+        - cmd: "be rails c"
+    - name: tig
+      root: ~/code/rise
+      panes:
+        - cmd: "tig"
+    - name: vim
+      root: ~/code/rise
+      panes:
+        - cmd: "vim"
+    - name: terminal
+      root: ~/code/rise
+      panes:
+        - cmd: "git status"

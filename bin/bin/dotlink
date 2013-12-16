@@ -17,5 +17,6 @@ stow fontconfig
 stow ls
 stow tmux
 stow rspec
+stow teamocil
 
 source ~/.bash_profile
