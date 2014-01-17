@@ -4,11 +4,11 @@ session:
     - name: server
       root: ~/code/rise
       panes:
-        - cmd: "be rails s"
+        - cmd: "befr rails s"
     - name: console
       root: ~/code/rise
       panes:
-        - cmd: "be rails c"
+        - cmd: "befr rails c"
     - name: tig
       root: ~/code/rise
       panes:
