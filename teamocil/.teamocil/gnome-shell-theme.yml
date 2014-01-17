@@ -1,0 +1,11 @@
+session:
+  name: rise
+  windows:
+    - name: vim
+      root: ~/.themes/patrick
+      panes:
+        - cmd: "vim -O /usr/share/gnome-shell/theme/gnome-shell/gnome-shell.css gnome-shell/gnome-shell.sass"
+    - name: terminal
+      root: ~/.themes/patrick
+      panes:
+        - cmd: "sass ~/.themes/patrick/gnome-shell/gnome-shell.{sass,css} && killall -s SIGHUP gnome-shell"
