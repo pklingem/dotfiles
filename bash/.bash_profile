@@ -1,3 +1,7 @@
+#if [ -f ~/.bashrc ]; then
+#   source ~/.bashrc
+#fi
+
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 alias lsa="ls -lah"
