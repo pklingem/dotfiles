@@ -8,3 +8,7 @@ alias be="bundle exec"
 alias befr="bundle exec foreman run"
 
 alias gs="git status"
+alias gprom="git pull --rebase origin master"
+alias grc="git rebase --continue"
+alias ga="git add ."
+alias gA="git add -A"
