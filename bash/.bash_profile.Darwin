@@ -1,4 +1,4 @@
-source ~/.profile
+export PATH=/usr/local/bin:$PATH
 
 alias ls="ls -G"
 
@@ -6,5 +6,7 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-PATH=$PATH:~/Library/Python/2.7/bin
-. ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
+PATH=$PATH:$(brew --prefix)/Cellar/python/2.7.6/bin
+. $(brew --prefix)/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
