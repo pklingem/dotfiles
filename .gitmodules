@@ -1,9 +1,6 @@
 [submodule "janus/.janus/tabular"]
 	path = janus/.janus/tabular
 	url = git@github.com:godlygeek/tabular.git
-[submodule "janus/.janus/vim-multiple-cursors"]
-	path = janus/.janus/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors.git
 [submodule "janus/.janus/vim-gitgutter"]
 	path = janus/.janus/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
