@@ -12,3 +12,6 @@ alias gprom="git pull --rebase origin master"
 alias grc="git rebase --continue"
 alias ga="git add ."
 alias gA="git add -A"
+
+# added by travis gem
+[ -f /Users/patrick/.travis/travis.sh ] && source /Users/patrick/.travis/travis.sh
