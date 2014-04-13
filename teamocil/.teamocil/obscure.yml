@@ -1,0 +1,23 @@
+session:
+  name: obscure
+  windows:
+    - name: server
+      root: ~/code/obscure
+      panes:
+        - cmd: "befr rails s"
+    - name: console
+      root: ~/code/obscure
+      panes:
+        - cmd: "befr rails c"
+    - name: tig
+      root: ~/code/obscure
+      panes:
+        - cmd: "tig"
+    - name: vim
+      root: ~/code/obscure
+      panes:
+        - cmd: "vim"
+    - name: terminal
+      root: ~/code/obscure
+      panes:
+        - cmd: "git status"
