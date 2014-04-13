@@ -17,6 +17,8 @@ ruby=less
 --type-add
 ruby=sass
 --type-add
+ruby=scss
+--type-add
 ruby=hbs
 --type-add
 ruby=eco
