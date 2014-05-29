@@ -1,23 +1,23 @@
 session:
-  name: obscure
+  name: hack
   windows:
     - name: server
-      root: ~/code/obscure
+      root: ~/code/hack
       panes:
         - cmd: "befr rails s"
     - name: console
-      root: ~/code/obscure
+      root: ~/code/hack
       panes:
         - cmd: "befr rails c"
     - name: tig
-      root: ~/code/obscure
+      root: ~/code/hack
       panes:
         - cmd: "tig"
     - name: vim
-      root: ~/code/obscure
+      root: ~/code/hack
       panes:
         - cmd: "vim"
     - name: terminal
-      root: ~/code/obscure
+      root: ~/code/hack
       panes:
         - cmd: "git status"
