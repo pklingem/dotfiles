@@ -10,3 +10,6 @@
 [submodule "ls/.config/ls/dircolors-solarized"]
 	path = ls/.config/ls/dircolors-solarized
 	url = git@github.com:seebi/dircolors-solarized
+[submodule "janus/.janus/vim-tmux-navigator"]
+	path = janus/.janus/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator
