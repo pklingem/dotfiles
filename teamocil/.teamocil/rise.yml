@@ -9,14 +9,6 @@ session:
       root: ~/code/rise
       panes:
         - cmd: "befr rails c"
-    - name: tig
-      root: ~/code/rise
-      panes:
-        - cmd: "tig"
-    - name: travis
-      root: ~/code/rise
-      panes:
-        - cmd: "travis monitor --pro -n -r articulate/rise"
     - name: vim
       root: ~/code/rise
       panes:
