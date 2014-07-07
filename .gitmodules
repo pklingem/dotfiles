@@ -4,12 +4,12 @@
 [submodule "janus/.janus/vim-gitgutter"]
 	path = janus/.janus/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
-[submodule "janus/.janus/vim-dispatch"]
-	path = janus/.janus/vim-dispatch
-	url = git@github.com:tpope/vim-dispatch
 [submodule "ls/.config/ls/dircolors-solarized"]
 	path = ls/.config/ls/dircolors-solarized
 	url = git@github.com:seebi/dircolors-solarized
 [submodule "janus/.janus/vim-tmux-navigator"]
 	path = janus/.janus/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator
+[submodule "janus/.janus/vim-dispatch"]
+	path = janus/.janus/vim-dispatch
+	url = git@github.com:tpope/vim-dispatch
