@@ -13,3 +13,6 @@
 [submodule "janus/.janus/vim-dispatch"]
 	path = janus/.janus/vim-dispatch
 	url = git@github.com:tpope/vim-dispatch
+[submodule "janus/.janus/vim-multiple-cursors"]
+	path = janus/.janus/vim-multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors
