@@ -12,4 +12,6 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . $(brew --prefix)/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 
+PATH=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH
+
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
