@@ -14,6 +14,5 @@ alias scorm-provision="knife ssh -i ~/.ssh/perfectscorm.pem name:scorm-engine-ac
 alias scorm-ssh="ssh -i ~/.ssh/perfectscorm.pem ubuntu@perfectscorm.com"
 alias be="bundle exec"
 alias befr="bundle exec foreman run"
-alias rise-reset="killall ruby && befr rake db:drop db:create db:migrate db:test:clone && befr rake db:seed"
 
 source ~/.bash_profile.`uname`
