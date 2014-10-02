@@ -1,0 +1,15 @@
+session:
+  name: authoring
+  windows:
+    - name: server
+      root: ~/code/rise-authoring
+      panes:
+        - grunt
+    - name: vim
+      root: ~/code/rise-authoring
+      panes:
+        - vim -u ~/.vimrc.vundle
+    - name: terminal
+      root: ~/code/rise-authoring
+      panes:
+        - git status

@@ -4,7 +4,7 @@ session:
     - name: server
       root: ~/code/rise
       panes:
-        - cmd: "befr rails s"
+        - cmd: "be foreman start"
     - name: console
       root: ~/code/rise
       panes:

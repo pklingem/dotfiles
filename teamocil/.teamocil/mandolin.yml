@@ -1,0 +1,14 @@
+name: mandolin
+windows:
+  - name: server
+    root: ~/code/mandolin
+    panes:
+      - commands: ["gulp"]
+  - name: vim
+    root: ~/code/mandolin
+    panes:
+      - commands: ["vim -u ~/.vimrc.vundle"]
+  - name: terminal
+    root: ~/code/mandolin
+    panes:
+      - commands: ["git status"]
