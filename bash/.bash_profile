@@ -2,6 +2,7 @@
 #   source ~/.bashrc
 #fi
 
+export EDITOR=vim
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 alias lsa="ls -lah"
