@@ -39,6 +39,7 @@ Plugin 'vim-scripts/tlib'
 Plugin 'garbas/vim-snipmate'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-scripts/keepcase.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number            " Show line numbers
