@@ -40,8 +40,13 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/keepcase.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
+Plugin 'MarcWeber/vim-addon-local-vimrc'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set exrc   " enable per-directory .vimrc files
+set secure " disable unsafe commands in local .vimrc files
 set number            " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
@@ -151,3 +156,7 @@ filetype plugin indent on     " required
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 " Put your stuff after this line
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-session config
+let g:session_autosave = 'no'
+let g:session_autoload = 'no'
