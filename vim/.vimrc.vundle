@@ -43,6 +43,7 @@ Plugin 'vim-scripts/keepcase.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 Plugin 'MarcWeber/vim-addon-local-vimrc'
+Plugin 'tpope/vim-vinegar'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set exrc   " enable per-directory .vimrc files
@@ -80,6 +81,8 @@ set directory^=~/.vim/_temp//                                                   
 map <leader>n :NERDTreeToggle<CR>
 map <leader>f :NERDTreeFind<CR>
 map <leader>z :ZoomWin<CR>
+map <leader>k :Explore<CR>
+let g:netrw_liststyle=3
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
