@@ -7,3 +7,5 @@
 
 [push]
   default = tracking
+[github]
+	user = pklingem
