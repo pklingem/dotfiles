@@ -9,6 +9,7 @@ alias lsa="ls -lah"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="./node_modules/.bin:$PATH"
 
 alias scorm-provision="knife ssh -i ~/.ssh/perfectscorm.pem name:scorm-engine-acceptance-1 \"sudo chef-client\" -x ubuntu"
 alias scorm-ssh="ssh -i ~/.ssh/perfectscorm.pem ubuntu@perfectscorm.com"
