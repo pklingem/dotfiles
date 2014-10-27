@@ -44,6 +44,9 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 Plugin 'MarcWeber/vim-addon-local-vimrc'
 Plugin 'tpope/vim-vinegar'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'sjl/vitality.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set exrc   " enable per-directory .vimrc files
