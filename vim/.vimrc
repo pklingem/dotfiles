@@ -47,6 +47,7 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'sjl/vitality.vim'
+Plugin 'mtth/scratch.vim'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set exrc   " enable per-directory .vimrc files
