@@ -21,4 +21,6 @@ alias shine="export PROMPT_COMMAND='echo -ne \"\033]0;shine\007\"' && tmux && te
 alias rise-authoring="export PROMPT_COMMAND='echo -ne \"\033]0;rise-authoring\007\"' && tmux && teamocil --here rise-authoring"
 alias mandolin="export PROMPT_COMMAND='echo -ne \"\033]0;mandolin\007\"' && tmux && teamocil --here mandolin"
 
+killport() { kill -9 `lsof -i tcp:"$@" -Fp|tr -d p`;}
+
 source ~/.bash_profile.`uname`
