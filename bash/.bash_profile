@@ -16,4 +16,9 @@ alias scorm-ssh="ssh -i ~/.ssh/perfectscorm.pem ubuntu@perfectscorm.com"
 alias be="bundle exec"
 alias befr="bundle exec foreman run"
 
+alias rise="export PROMPT_COMMAND='echo -ne \"\033]0;rise\007\"' && tmux && teamocil --here rise"
+alias shine="export PROMPT_COMMAND='echo -ne \"\033]0;shine\007\"' && tmux && teamocil --here shine"
+alias rise-authoring="export PROMPT_COMMAND='echo -ne \"\033]0;rise-authoring\007\"' && tmux && teamocil --here rise-authoring"
+alias mandolin="export PROMPT_COMMAND='echo -ne \"\033]0;mandolin\007\"' && tmux && teamocil --here mandolin"
+
 source ~/.bash_profile.`uname`
