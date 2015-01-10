@@ -1,23 +1,22 @@
-session:
-  name: hack
-  windows:
-    - name: server
-      root: ~/code/hack
-      panes:
-        - cmd: "befr rails s"
-    - name: console
-      root: ~/code/hack
-      panes:
-        - cmd: "befr rails c"
-    - name: tig
-      root: ~/code/hack
-      panes:
-        - cmd: "tig"
-    - name: vim
-      root: ~/code/hack
-      panes:
-        - cmd: "vim"
-    - name: terminal
-      root: ~/code/hack
-      panes:
-        - cmd: "git status"
+name: hack
+windows:
+  - name: server
+    root: ~/code/hack
+    panes:
+      - commands:
+        - befr rails s
+  - name: console
+    root: ~/code/hack
+    panes:
+      - commands:
+        - befr rails c
+  - name: vim
+    root: ~/code/hack
+    panes:
+      - commands:
+        - vim
+  - name: terminal
+    root: ~/code/hack
+    panes:
+      - commands:
+        - git status

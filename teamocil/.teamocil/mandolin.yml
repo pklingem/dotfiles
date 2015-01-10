@@ -7,7 +7,7 @@ windows:
   - name: vim
     root: ~/code/mandolin
     panes:
-      - commands: ["vim -u ~/.vimrc.vundle"]
+      - commands: ["vim"]
   - name: terminal
     root: ~/code/mandolin
     panes:

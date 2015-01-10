@@ -1,19 +1,32 @@
-session:
-  name: rise
-  windows:
-    - name: server
-      root: ~/code/rise
-      panes:
-        - cmd: "be foreman start"
-    - name: console
-      root: ~/code/rise
-      panes:
-        - cmd: "befr rails c"
-    - name: vim
-      root: ~/code/rise
-      panes:
-        - cmd: "vim"
-    - name: terminal
-      root: ~/code/rise
-      panes:
-        - cmd: "git status"
+name: rise
+windows:
+  - name: server
+    root: ~/code/rise
+    panes:
+      - commands:
+        - be rails s -p 5000
+  - name: sidekiq
+    root: ~/code/rise
+    panes:
+      - commands:
+        - be sidekiq
+  - name: console
+    root: ~/code/rise
+    panes:
+      - commands:
+        - be rails c
+  - name: karma
+    root: ~/code/rise
+    panes:
+      - commands:
+        - befr rake karma:run
+  - name: vim
+    root: ~/code/rise
+    panes:
+      - commands:
+        - vim
+  - name: terminal
+    root: ~/code/rise
+    panes:
+      - commands:
+        - git status

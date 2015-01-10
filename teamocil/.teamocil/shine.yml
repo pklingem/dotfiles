@@ -3,7 +3,7 @@ windows:
   - name: server
     root: ~/code/shine
     panes:
-      - be foreman start -p 5001
+      - be foreman start -p 5002
   - name: console
     root: ~/code/shine
     panes:
