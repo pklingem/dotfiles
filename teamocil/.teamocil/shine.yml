@@ -1,18 +1,32 @@
 name: shine
 windows:
   - name: server
-    root: ~/code/shine
+    root: ~/src/articulate/shine
     panes:
-      - be foreman start -p 5002
+      - commands:
+        - be rails s -p 5001
+  - name: sidekiq
+    root: ~/src/articulate/shine
+    panes:
+      - commands:
+        - be sidekiq
   - name: console
-    root: ~/code/shine
+    root: ~/src/articulate/shine
     panes:
-      - befr rails c
+      - commands:
+        - be rails c
+  - name: karma
+    root: ~/src/articulate/shine
+    panes:
+      - commands:
+        - git status
   - name: vim
-    root: ~/code/shine
+    root: ~/src/articulate/shine
     panes:
-      - vim
+      - commands:
+        - vim
   - name: terminal
-    root: ~/code/shine
+    root: ~/src/articulate/shine
     panes:
-      - git status
+      - commands:
+        - git status
