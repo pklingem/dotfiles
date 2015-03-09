@@ -8,11 +8,7 @@ call vundle#rc()
 "let path = '~/some/path/here'
 "call vundle#rc(path)
 
-" let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-rails'
@@ -49,8 +45,8 @@ Plugin 'mattn/gist-vim'
 Plugin 'sjl/vitality.vim'
 Plugin 'mtth/scratch.vim'
 Plugin 'tpope/vim-endwise'
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'ryanss/vim-hackernews'
+
 set exrc   " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files
 set number            " Show line numbers
