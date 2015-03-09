@@ -1,14 +1,17 @@
 name: rise-authoring
 windows:
   - name: server
-    root: ~/code/rise-authoring
+    root: ~/src/articulate/rise-authoring
     panes:
-      - grunt clean && grunt
+      - commands:
+        - grunt clean && grunt
   - name: vim
-    root: ~/code/rise-authoring
+    root: ~/src/articulate/rise-authoring
     panes:
-      - vim
+      - commands:
+        - vim
   - name: terminal
-    root: ~/code/rise-authoring
+    root: ~/src/articulate/rise-authoring
     panes:
-      - git status
+      - commands:
+        - git status
