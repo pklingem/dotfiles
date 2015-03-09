@@ -1,32 +1,32 @@
 name: rise
 windows:
   - name: server
-    root: ~/code/rise
+    root: ~/src/articulate/rise
     panes:
       - commands:
         - be rails s -p 5000
   - name: sidekiq
-    root: ~/code/rise
+    root: ~/src/articulate/rise
     panes:
       - commands:
         - be sidekiq
   - name: console
-    root: ~/code/rise
+    root: ~/src/articulate/rise
     panes:
       - commands:
         - be rails c
   - name: karma
-    root: ~/code/rise
+    root: ~/src/articulate/rise
     panes:
       - commands:
-        - befr rake karma:run
+        - git status
   - name: vim
-    root: ~/code/rise
+    root: ~/src/articulate/rise
     panes:
       - commands:
         - vim
   - name: terminal
-    root: ~/code/rise
+    root: ~/src/articulate/rise
     panes:
       - commands:
         - git status
