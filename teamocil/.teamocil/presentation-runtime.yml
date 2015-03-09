@@ -1,0 +1,14 @@
+name: presentation-runtime
+windows:
+  - name: server
+    root: ~/src/articulate/presentation-runtime
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/presentation-runtime
+    panes:
+      - vim
+  - name: terminal
+    root: ~/src/articulate/presentation-runtime
+    panes:
+      - git status
