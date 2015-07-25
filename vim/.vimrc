@@ -47,6 +47,11 @@ Plugin 'sjl/vitality.vim'
 Plugin 'mtth/scratch.vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'ryanss/vim-hackernews'
+Plugin 'elzr/vim-json'
+Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'mxw/vim-jsx'
+Plugin 'digitaltoad/vim-jade'
 
 set exrc   " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files
