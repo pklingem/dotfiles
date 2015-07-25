@@ -81,14 +81,38 @@ set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz                         
 set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*     " Ignore bundler and sass cache
 set wildignore+=*/tmp/librarian/*,*/.vagrant/*,*/.kitchen/*,*/vendor/cookbooks/* " Ignore librarian-chef, vagrant, test-kitchen and Berkshelf cache
 set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*     " Ignore rails temporary asset caches
+set wildignore+=*/dist/*/node_modules/*                                          " Ignore node directories
 set wildignore+=*.swp,*~,._*                                                     " Disable temp and backup files
 set backupdir^=~/.vim/_backup//                                                  " where to put backup files.
 set directory^=~/.vim/_temp//                                                    " where to put swap files.
+set autoread  " auto-load files that have been edited outside of vim, but not inside
+set laststatus=2 " always show the statusline
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>n :NERDTreeToggle<CR>
 map <leader>f :NERDTreeFind<CR>
 map <leader>z :ZoomWin<CR>
 map <leader>k :Explore<CR>
+
+" Toggle paste with <leader>p
+nnoremap <leader>p :call PasteToggle()<cr>
+function! PasteToggle()
+    if &paste
+        setlocal nopaste
+    else
+        setlocal paste
+    endif
+endfunction
+
+" Toggle hidden with <leader>h
+nnoremap <leader>h :call HiddenToggle()<cr>
+function! HiddenToggle()
+    if &hidden
+        setlocal nohidden
+    else
+        setlocal hidden
+    endif
+endfunction
+
 let g:netrw_liststyle=3
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 python from powerline.vim import setup as powerline_setup
