@@ -1,7 +1,5 @@
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
-fi
+. ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+source /etc/profile.d/bash_completion.sh
 
 export PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
