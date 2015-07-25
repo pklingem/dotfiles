@@ -1,0 +1,14 @@
+name: course-service
+windows:
+  - name: server
+    root: ~/src/articulate/course-service
+    panes:
+      - npm run start:dev
+  - name: vim
+    root: ~/src/articulate/course-service
+    panes:
+      - commands: ["vim"]
+  - name: terminal
+    root: ~/src/articulate/course-service
+    panes:
+      - commands: ["git status"]

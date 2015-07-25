@@ -1,0 +1,22 @@
+name: one
+windows:
+  - name: one server
+    root: ~/src/articulate/one
+    panes:
+      - commands:
+        - boot up
+  - name: heyo server
+    root: ~/src/articulate/heyo
+    panes:
+      - commands:
+        - boot up
+  - name: vim
+    root: ~/src/articulate/one
+    panes:
+      - commands:
+        - vim
+  - name: terminal
+    root: ~/src/articulate/one
+    panes:
+      - commands:
+        - git status

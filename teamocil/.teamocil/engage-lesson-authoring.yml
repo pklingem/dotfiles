@@ -1,0 +1,14 @@
+name: engage-lesson-authoring
+windows:
+  - name: server
+    root: ~/src/articulate/engage-lesson-authoring
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/engage-lesson-authoring
+    panes:
+      - commands: ["vim"]
+  - name: terminal
+    root: ~/src/articulate/engage-lesson-authoring
+    panes:
+      - commands: ["git status"]

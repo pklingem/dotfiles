@@ -1,0 +1,10 @@
+name: rise-frontend
+windows:
+  - name: vim
+    root: ~/src/articulate/rise-frontend
+    panes:
+      - vim
+  - name: terminal
+    root: ~/src/articulate/rise-frontend
+    panes:
+      - git status

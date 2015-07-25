@@ -1,0 +1,14 @@
+name: authoring-demo
+windows:
+  - name: server
+    root: ~/src/articulate/authoring-demo
+    panes:
+      - commands: ["npm start"]
+  - name: vim
+    root: ~/src/articulate/authoring-demo
+    panes:
+      - commands: ["vim"]
+  - name: terminal
+    root: ~/src/articulate/authoring-demo
+    panes:
+      - commands: ["git status"]

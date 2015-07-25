@@ -1,0 +1,14 @@
+name: labeled-graphic-runtime
+windows:
+  - name: server
+    root: ~/src/articulate/labeled-graphic-runtime
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/labeled-graphic-runtime
+    panes:
+      - vim
+  - name: terminal
+    root: ~/src/articulate/labeled-graphic-runtime
+    panes:
+      - git status

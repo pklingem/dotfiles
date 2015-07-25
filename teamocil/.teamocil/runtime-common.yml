@@ -1,9 +1,5 @@
 name: runtime-common
 windows:
-  - name: server
-    root: ~/src/articulate/runtime-common
-    panes:
-      - npm start
   - name: vim
     root: ~/src/articulate/runtime-common
     panes:

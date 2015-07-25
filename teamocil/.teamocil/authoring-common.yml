@@ -1,0 +1,10 @@
+name: authoring-common
+windows:
+  - name: vim
+    root: ~/src/articulate/authoring-common
+    panes:
+      - commands: ["vim"]
+  - name: terminal
+    root: ~/src/articulate/authoring-common
+    panes:
+      - commands: ["git status"]

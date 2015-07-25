@@ -1,0 +1,17 @@
+name: shine-authoring
+windows:
+  - name: server
+    root: ~/src/articulate/shine-authoring
+    panes:
+      - commands:
+        - grunt clean && grunt
+  - name: vim
+    root: ~/src/articulate/shine-authoring
+    panes:
+      - commands:
+        - vim
+  - name: terminal
+    root: ~/src/articulate/shine-authoring
+    panes:
+      - commands:
+        - git status

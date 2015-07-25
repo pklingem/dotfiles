@@ -1,0 +1,14 @@
+name: process-authoring
+windows:
+  - name: server
+    root: ~/src/articulate/process-authoring
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/process-authoring
+    panes:
+      - vim
+  - name: terminal
+    root: ~/src/articulate/process-authoring
+    panes:
+      - git status

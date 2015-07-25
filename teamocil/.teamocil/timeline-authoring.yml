@@ -1,0 +1,14 @@
+name: timeline-authoring
+windows:
+  - name: server
+    root: ~/src/articulate/timeline-authoring
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/timeline-authoring
+    panes:
+      - vim
+  - name: terminal
+    root: ~/src/articulate/timeline-authoring
+    panes:
+      - git status

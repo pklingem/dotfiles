@@ -1,0 +1,14 @@
+name: quiz-authoring
+windows:
+  - name: server
+    root: ~/src/articulate/quiz-authoring
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/quiz-authoring
+    panes:
+      - commands: ["vim"]
+  - name: terminal
+    root: ~/src/articulate/quiz-authoring
+    panes:
+      - commands: ["git status"]

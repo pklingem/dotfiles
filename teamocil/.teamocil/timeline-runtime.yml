@@ -1,0 +1,14 @@
+name: timeline-runtime
+windows:
+  - name: server
+    root: ~/src/articulate/timeline-runtime
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/timeline-runtime
+    panes:
+      - vim
+  - name: terminal
+    root: ~/src/articulate/timeline-runtime
+    panes:
+      - git status

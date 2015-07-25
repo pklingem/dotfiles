@@ -1,0 +1,14 @@
+name: uploader
+windows:
+  - name: server
+    root: ~/src/articulate/uploader
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/uploader
+    panes:
+      - commands: ["vim"]
+  - name: terminal
+    root: ~/src/articulate/uploader
+    panes:
+      - commands: ["git status"]

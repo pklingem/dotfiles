@@ -1,0 +1,14 @@
+name: course-authoring
+windows:
+  - name: server
+    root: ~/src/articulate/course-authoring
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/course-authoring
+    panes:
+      - commands: ["vim"]
+  - name: terminal
+    root: ~/src/articulate/course-authoring
+    panes:
+      - commands: ["git status"]

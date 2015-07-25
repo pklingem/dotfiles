@@ -1,0 +1,14 @@
+name: authoring-shared
+windows:
+  - name: server
+    root: ~/src/articulate/authoring-shared
+    panes:
+      - npm start
+  - name: vim
+    root: ~/src/articulate/authoring-shared
+    panes:
+      - commands: ["vim"]
+  - name: terminal
+    root: ~/src/articulate/authoring-shared
+    panes:
+      - commands: ["git status"]
