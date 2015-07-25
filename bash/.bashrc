@@ -10,6 +10,3 @@ alias grc="git rebase --continue"
 alias ga="git add ."
 alias gA="git add -A"
 alias gpf="git pull --ff-only"
-
-# added by travis gem
-[ -f /Users/patrick/.travis/travis.sh ] && source /Users/patrick/.travis/travis.sh
