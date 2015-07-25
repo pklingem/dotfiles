@@ -1,6 +1,6 @@
-#if [ -f ~/.bashrc ]; then
-#   source ~/.bashrc
-#fi
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
 
 export EDITOR=vim
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
