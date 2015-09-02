@@ -1,18 +1,3 @@
-[submodule "janus/.janus/tabular"]
-	path = janus/.janus/tabular
-	url = git@github.com:godlygeek/tabular.git
-[submodule "janus/.janus/vim-gitgutter"]
-	path = janus/.janus/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter.git
 [submodule "ls/.config/ls/dircolors-solarized"]
 	path = ls/.config/ls/dircolors-solarized
 	url = git@github.com:seebi/dircolors-solarized
-[submodule "janus/.janus/vim-tmux-navigator"]
-	path = janus/.janus/vim-tmux-navigator
-	url = git@github.com:christoomey/vim-tmux-navigator
-[submodule "janus/.janus/vim-dispatch"]
-	path = janus/.janus/vim-dispatch
-	url = git@github.com:tpope/vim-dispatch
-[submodule "janus/.janus/vim-multiple-cursors"]
-	path = janus/.janus/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors
