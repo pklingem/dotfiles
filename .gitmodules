@@ -1,3 +1,6 @@
 [submodule "ls/.config/ls/dircolors-solarized"]
 	path = ls/.config/ls/dircolors-solarized
 	url = git@github.com:seebi/dircolors-solarized
+[submodule "fonts/.local/share/fonts/Hack"]
+	path = fonts/.local/share/fonts/Hack
+	url = git@github.com:chrissimpkins/Hack.git
