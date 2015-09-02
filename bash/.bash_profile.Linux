@@ -1,4 +1,3 @@
-. ~/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 source /etc/profile.d/bash_completion.sh
 
 export PATH
