@@ -52,6 +52,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'mxw/vim-jsx'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'mattn/emmet-vim'
 
 set exrc   " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files
