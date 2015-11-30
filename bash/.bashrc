@@ -1,3 +1,5 @@
+export PATH=/usr/local/bin:$PATH
+
 alias tmux="tmux -2"
 
 alias be="bundle exec"
