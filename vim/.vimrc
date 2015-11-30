@@ -54,6 +54,12 @@ Plugin 'mxw/vim-jsx'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'mattn/emmet-vim'
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 set exrc   " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files
 set number            " Show line numbers
@@ -115,10 +121,6 @@ function! HiddenToggle()
 endfunction
 
 let g:netrw_liststyle=3
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-gitgutter color improvements
 highlight clear SignColumn
