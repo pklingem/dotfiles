@@ -1,5 +1,5 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+export XDG_CONFIG_HOME=~/.config
 
 alias ls="ls -G"
 
