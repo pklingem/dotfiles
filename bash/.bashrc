@@ -13,4 +13,7 @@ alias ga="git add ."
 alias gA="git add -A"
 alias gpf="git pull --ff-only"
 
+export NVM_DIR="/Users/patrick/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 source ~/.bashrc.`uname`
