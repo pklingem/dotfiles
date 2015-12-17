@@ -19,6 +19,5 @@ killport() { kill -9 `lsof -i tcp:"$@" -Fp|tr -d p`;}
 
 ### NVM
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 source ~/.bash_profile.`uname`
