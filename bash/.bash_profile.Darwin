@@ -1,5 +1,3 @@
-echo "bash_profile Darwin"
-
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export XDG_CONFIG_HOME=~/.config
 

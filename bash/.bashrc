@@ -1,5 +1,3 @@
-echo "bashrc"
-
 export PATH=/usr/local/bin:$PATH
 
 alias tmux="tmux -2"
