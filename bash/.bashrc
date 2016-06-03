@@ -20,3 +20,6 @@ export NVM_DIR="/Users/patrick/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 source ~/.bashrc.`uname`
+
+# added by travis gem
+[ -f /Users/patrick/.travis/travis.sh ] && source /Users/patrick/.travis/travis.sh
