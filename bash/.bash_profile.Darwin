@@ -11,5 +11,5 @@ PATH=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin:$PATH
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-eval "$(docker-machine env default)"
+eval $(docker-machine env default)
 source $(brew --prefix nvm)/nvm.sh
