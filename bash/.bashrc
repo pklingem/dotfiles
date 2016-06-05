@@ -1,10 +1,13 @@
 export PATH=/usr/local/bin:$PATH
 
+# tmux
 alias tmux="tmux -2"
 
+# bundle
 alias be="bundle exec"
 alias befr="bundle exec foreman run"
 
+# git
 alias gst="git status -sb"
 alias gf="git fetch"
 alias gprom="git pull --rebase origin master"
