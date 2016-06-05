@@ -154,6 +154,7 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set defaults for NERDCommenter
 let NERDSpaceDelims=1
+let NERDTreeMinimalUI=1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-dispatch config
 autocmd FileType ruby let b:dispatch = 'bundle exec rspec %'
