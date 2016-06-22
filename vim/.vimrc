@@ -53,6 +53,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'mxw/vim-jsx'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'mattn/emmet-vim'
+Plugin 'ryanoasis/vim-devicons'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 python from powerline.vim import setup as powerline_setup
