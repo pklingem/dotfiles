@@ -91,3 +91,17 @@ windows:
           -
         - prompt:
           - git status
+  - yurl:
+      root: ~/src/articulate/yurl
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - products:
+      root: ~/src/articulate/360-products
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
