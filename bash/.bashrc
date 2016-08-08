@@ -19,7 +19,7 @@ alias doc="docker-compose"
 alias drm="docker-compose run --rm"
 alias drma="docker-compose run --rm app"
 alias 360="tmuxinator start 360"
-corsify() { heroku config:set AUTH0_COOKIE_DOMAIN=frontend-360-pr-$1.herokuapp.com --app frontend-360-pr-$1 }
+corsify() { heroku config:set AUTH0_COOKIE_DOMAIN=frontend-360-pr-$1.herokuapp.com --app frontend-360-pr-$1; }
 
 export NVM_DIR="/Users/patrick/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
