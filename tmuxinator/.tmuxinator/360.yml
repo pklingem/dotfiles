@@ -105,3 +105,17 @@ windows:
           -
         - prompt:
           - git status
+  - subscriptions:
+      root: ~/src/articulate/360-subscriptions
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - auth-proxy:
+      root: ~/src/articulate/auth-proxy
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
