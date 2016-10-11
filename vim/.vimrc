@@ -53,6 +53,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'mattn/emmet-vim'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'jiangmiao/auto-pairs'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 python from powerline.vim import setup as powerline_setup
