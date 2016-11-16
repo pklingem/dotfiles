@@ -3,5 +3,5 @@ ssh/.ssh/id_rsa*
 ssh/.ssh/*.pem
 ssh/.ssh/known_hosts
 
-# chef
-chef/.chef/*.pem
+# tmux
+tmux/.tmux/plugins/*
