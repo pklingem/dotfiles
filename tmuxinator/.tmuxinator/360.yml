@@ -119,3 +119,17 @@ windows:
           -
         - prompt:
           - git status
+  - auth0-rules:
+      root: ~/src/articulate/auth0-rules
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - content-library-images:
+      root: ~/src/articulate/360-content-library-images
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
