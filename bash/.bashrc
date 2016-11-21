@@ -1,4 +1,5 @@
 export PATH=/usr/local/bin:$PATH
+export AWS_FUZZ_USER="pklingemann"
 
 # tmux
 alias tmux="tmux -2"
