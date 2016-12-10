@@ -133,3 +133,10 @@ windows:
           -
         - prompt:
           - git status
+  - notify:
+      root: ~/src/articulate/notify
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
