@@ -19,6 +19,7 @@ alias gpf="git pull --ff-only"
 alias doc="docker-compose"
 alias drm="docker-compose run --rm"
 alias drma="docker-compose run --rm app"
+alias dcbncp="docker-compose build --no-cache --pull"
 alias 360="tmuxinator start 360"
 alias dvclean='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro -v /var/lib/docker:/var/lib/docker martin/docker-cleanup-volumes'
 alias docker-clean-dangling='docker rmi $(docker images -f "dangling=true" -q)'
