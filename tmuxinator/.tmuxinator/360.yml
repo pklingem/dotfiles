@@ -49,17 +49,6 @@ windows:
         - config:
           - cd ../articulate-kong-config
           - git status
-  - infra:
-      root: ~/src/articulate/infra
-      panes:
-        - git status
-  - profiles:
-      root: ~/src/articulate/profiles
-      panes:
-        - docker:
-          -
-        - prompt:
-          - git status
   - frontend:
       root: ~/src/articulate/360-frontend
       panes:
@@ -67,8 +56,8 @@ windows:
           -
         - prompt:
           - git status
-  - cpafé:
-      root: ~/src/articulate/360-content-pass-admin-frontend
+  - review:
+      root: ~/src/articulate/360-review
       panes:
         - docker:
           -
@@ -81,8 +70,15 @@ windows:
           -
         - prompt:
           - git status
-  - review:
-      root: ~/src/articulate/360-review
+  - profiles:
+      root: ~/src/articulate/profiles
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - cpafé:
+      root: ~/src/articulate/360-content-pass-admin-frontend
       panes:
         - docker:
           -
