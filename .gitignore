@@ -5,3 +5,4 @@ ssh/.ssh/known_hosts
 
 # tmux
 tmux/.tmux/plugins/*
+tmux/.tmux/resurrect/*
