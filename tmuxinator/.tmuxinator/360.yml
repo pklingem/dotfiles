@@ -33,9 +33,13 @@ windows:
   - skipper:
       root: ~/src/articulate/skipper
       panes:
-        - docker:
+        - skipper:
           - git pull
           - make start
+        - private-resources:
+          - cd ../private-resources
+          - git pull
+          - make
   - kong:
       root: ~/src/articulate/articulate-kong
       panes:
