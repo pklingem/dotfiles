@@ -140,3 +140,10 @@ windows:
           -
         - prompt:
           - git status
+  - status:
+      root: ~/src/articulate/status
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
