@@ -29,6 +29,18 @@ alias fix-video='sudo killall VDCAssistant'
 alias dbncp='docker-compose build --no-cache --pull'
 corsify() { heroku config:set AUTH0_COOKIE_DOMAIN=frontend-360-pr-$1.herokuapp.com --app frontend-360-pr-$1; }
 
+git-freebase() {
+  set -e
+  git add .
+  git reset --hard
+  git checkout $1
+  git fetch
+  git reset --hard origin/$1
+  git pull --rebase origin master
+  git push -f origin $1
+  git checkout -
+}
+
 export NVM_DIR="/Users/patrick/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
