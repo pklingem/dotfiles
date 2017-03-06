@@ -26,6 +26,7 @@ alias dvclean='docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro -
 alias docker-clean-dangling='docker rmi $(docker images -f "dangling=true" -q)'
 alias docker-clean='docker rm $(docker ps -a -q) && docker rmi $(docker images -q) && docker ps -a | cut -c-12 | xargs docker rm'
 alias fix-video='sudo killall VDCAssistant'
+alias dbncp='docker-compose build --no-cache --pull'
 corsify() { heroku config:set AUTH0_COOKIE_DOMAIN=frontend-360-pr-$1.herokuapp.com --app frontend-360-pr-$1; }
 
 export NVM_DIR="/Users/patrick/.nvm"
