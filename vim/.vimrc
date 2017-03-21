@@ -95,6 +95,9 @@ set backupdir^=~/.vim/_backup//                                                 
 set directory^=~/.vim/_temp//                                                    " where to put swap files.
 set autoread  " auto-load files that have been edited outside of vim, but not inside
 set laststatus=2 " always show the statusline
+" resize splits with mouse
+set mouse+=a
+set ttymouse=xterm2
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>n :NERDTreeToggle<CR>
 map <leader>f :NERDTreeFind<CR>
