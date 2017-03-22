@@ -104,6 +104,8 @@ map <leader>f :NERDTreeFind<CR>
 map <leader>z :ZoomWin<CR>
 map <leader>k :Explore<CR>
 map <leader>r :call Preserve("%!ramda-destruct")<CR>
+map <leader>q :q<CR>
+map <leader>s :w<CR>
 
 " Toggle paste with <leader>p
 nnoremap <leader>p :call PasteToggle()<cr>
