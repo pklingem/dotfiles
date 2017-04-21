@@ -99,6 +99,7 @@ set laststatus=2 " always show the statusline
 set mouse+=a
 set ttymouse=xterm2
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader = ","
 map <leader>n :NERDTreeToggle<CR>
 map <leader>f :NERDTreeFind<CR>
 map <leader>z :ZoomWin<CR>
