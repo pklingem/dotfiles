@@ -147,6 +147,34 @@ windows:
           -
         - prompt:
           - git status
+  - snapper:
+      root: ~/src/articulate/snapper
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - images:
+      root: ~/src/articulate/images
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - rise-runtime:
+      root: ~/src/articulate/rise-runtime
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - rise-packages:
+      root: ~/src/articulate/rise-packages
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
   - status:
       root: ~/src/articulate/status
       panes:
