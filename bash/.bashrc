@@ -1,4 +1,5 @@
 export PATH=/usr/local/bin:$PATH
+export PATH=:$PATH:./node_modules/.bin
 export AWS_FUZZ_USER="pklingemann"
 alias aws-fuzzy-prod="AWS_DEFAULT_PROFILE=prod aws-fuzzy"
 
