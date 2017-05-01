@@ -109,6 +109,24 @@ map <leader>q :q<CR>
 map <leader>s :w<CR>
 map <leader>r :%!ramda-destruct<CR>
 
+" Docker
+map <leader>k :%!docker-compose kill<CR>
+map <leader>b :%!docker-compose build<CR>
+map <leader>u :%!docker-compose up -d<CR>
+
+" Preserve
+function! Preserve(command)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  execute a:command
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
+
 " Toggle paste with <leader>p
 nnoremap <leader>p :call PasteToggle()<cr>
 function! PasteToggle()
