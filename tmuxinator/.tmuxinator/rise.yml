@@ -1,0 +1,145 @@
+# ~/.tmuxinator/360.yml
+
+name: rise
+root: ~/src/articulate
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+pre:
+  - docker-machine stop default
+  - unset DOCKER_CERT_PATH DOCKER_MACHINE_NAME DOCKER_TLS_VERIFY DOCKER_HOST
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t course-service
+
+windows:
+  - skipper:
+      root: ~/src/articulate/skipper
+      panes:
+        - skipper:
+          - git fetch
+          - git checkout use-fabio
+          - git pull
+          - git submodule update
+          - make start
+        - private-resources:
+          - cd ../private-resources
+          - git pull
+          - make
+  - kong:
+      root: ~/src/articulate/articulate-kong
+      panes:
+        - docker:
+          - git status
+          - doc up
+        - config:
+          - cd ../articulate-kong-config
+          - git status
+  - rise-frontend:
+      root: ~/src/articulate/rise-frontend
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - rise-runtime:
+      root: ~/src/articulate/rise-runtime
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - rise-packages:
+      root: ~/src/articulate/rise-packages
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - review:
+      root: ~/src/articulate/360-review
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - profiles:
+      root: ~/src/articulate/profiles
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - auth-proxy:
+      root: ~/src/articulate/auth-proxy
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - yurl:
+      root: ~/src/articulate/yurl
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - subscriptions:
+      root: ~/src/articulate/360-subscriptions
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - auth-proxy:
+      root: ~/src/articulate/auth-proxy
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - content-library-images:
+      root: ~/src/articulate/360-content-library-images
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - images:
+      root: ~/src/articulate/images
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - notify:
+      root: ~/src/articulate/notify
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
+  - snapper:
+      root: ~/src/articulate/snapper
+      panes:
+        - docker:
+          -
+        - prompt:
+          - git status
