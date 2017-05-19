@@ -8,8 +8,7 @@ root: ~/src/articulate
 
 # Runs before everything. Use it to start daemons etc.
 pre:
-  - docker-machine stop default
-  - unset DOCKER_CERT_PATH DOCKER_MACHINE_NAME DOCKER_TLS_VERIFY DOCKER_HOST
+  - open -a Docker
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
@@ -34,10 +33,6 @@ windows:
       root: ~/src/articulate/skipper
       panes:
         - skipper:
-          - git fetch
-          - git checkout use-fabio
-          - git pull
-          - git submodule update
           - make start
         - private-resources:
           - cd ../private-resources
