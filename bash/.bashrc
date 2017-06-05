@@ -28,6 +28,7 @@ alias drma="docker-compose run --rm app"
 alias dcbncp="docker-compose build --no-cache --pull"
 alias dbncp='docker-compose build --no-cache --pull'
 alias drm='docker-compose run --rm'
+alias dub='docker-compose up --build --force-recreate'
 alias docker-unhash='unset DOCKER_CERT_PATH DOCKER_MACHINE_NAME DOCKER_TLS_VERIFY DOCKER_HOST'
 
 # workspaces
