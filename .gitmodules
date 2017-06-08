@@ -7,3 +7,6 @@
 [submodule "tmux/.tmux/plugins/tpm"]
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "vim/.vim/autoload"]
+	path = vim/.vim/autoload
+	url = git@github.com:junegunn/vim-plug
