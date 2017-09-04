@@ -3,7 +3,6 @@ filetype off                  " required
 
 call plug#begin()
 
-Plug 'gmarik/Vundle.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-rails'
