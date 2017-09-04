@@ -9,3 +9,6 @@ tmux/.tmux/resurrect/*
 
 # heroku
 fonts/.local/share/heroku/*
+
+# vim
+vim/.vim/plugged
