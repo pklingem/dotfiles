@@ -225,3 +225,5 @@ filetype plugin indent on     " required
 " vim-session config
 let g:session_autosave = 'no'
 let g:session_autoload = 'no'
+
+highlight! link Visual CursorLine
