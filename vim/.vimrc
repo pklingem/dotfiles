@@ -161,16 +161,9 @@ highlight clear SignColumn
 " this one isn't working
 "highlight link SignColumn CursorColumn
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let s:uname = system("echo -n \"$(uname)\"")
-if !v:shell_error && s:uname == "Linux"
-endif
-
-if !v:shell_error && s:uname == "Darwin"
-  syntax enable
-  set background=dark
-  colorscheme solarized
-  let g:solarized_termcolors=256
-endif
+syntax enable
+set background=dark
+colorscheme solarized
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Prevent the cursor from moving to the edge of the window
 set scrolloff=5
