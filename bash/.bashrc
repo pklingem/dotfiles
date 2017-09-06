@@ -1,6 +1,7 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:~/.config/yarn/global/node_modules/.bin/
+export PATH="$HOME/.yarn/bin:$PATH"
 export AWS_FUZZ_USER="pklingemann"
 alias grep="grep --color=auto"
 alias aws-fuzzy-prod="AWS_DEFAULT_PROFILE=prod aws-fuzzy"
