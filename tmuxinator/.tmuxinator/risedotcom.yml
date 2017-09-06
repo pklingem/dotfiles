@@ -1,0 +1,66 @@
+name: 'risedotcom'
+root: ~/src/articulate
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+pre:
+  - open -a Docker
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: logs
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t course-service
+
+windows:
+  - skipper:
+      root: ~/src/articulate/skipper
+      panes:
+        - skipper:
+          - make start
+        - private-resources:
+          - cd ../private-resources
+          - git pull
+          - make
+  - esir:
+      root: ~/src/articulate/esir
+      panes:
+        - docker:
+          - doc up
+        - prompt:
+          - git status
+  - rise-frontend:
+      root: ~/src/articulate/rise-frontend
+      panes:
+        - docker:
+          - doc up
+        - prompt:
+          - git status
+  - rise-runtime:
+      root: ~/src/articulate/rise-runtime
+      panes:
+        - docker:
+          - doc up
+        - prompt:
+          - git status
+  - rise-packages:
+      root: ~/src/articulate/rise-packages
+      panes:
+        - docker:
+          - doc up
+        - prompt:
+          - git status
