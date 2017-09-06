@@ -21,3 +21,5 @@ killport() { kill -9 `lsof -i tcp:"$@" -Fp|tr -d p`;}
 export NVM_DIR=~/.nvm
 
 source ~/.bash_profile.`uname`
+
+export PATH="$HOME/.cargo/bin:$PATH"
