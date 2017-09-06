@@ -48,6 +48,7 @@ Plug 'digitaltoad/vim-jade'
 Plug 'mattn/emmet-vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
