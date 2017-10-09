@@ -50,6 +50,7 @@ Plug 'mxw/vim-jsx'
 Plug 'digitaltoad/vim-jade'
 Plug 'mattn/emmet-vim'
 Plug 'ryanoasis/vim-devicons'
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
 Plug 'jiangmiao/auto-pairs'
 Plug 'leafgarland/typescript-vim'
 
