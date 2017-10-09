@@ -51,6 +51,15 @@ git-freebase() {
   git checkout -
 }
 
+concon () {
+  case "$1" in
+    "prod") profile=prod ;;
+    "stage") profile=default ;;
+  esac
+  ip=$(aws ec2 --profile $profile describe-instances --filters Name=tag:App,Values=$2 --query 'Reservations[0].Instances[0].PrivateIpAddress' --output text)
+  ssh -t $ip concon ${@:3}
+}
+
 export NVM_DIR="/Users/patrick/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
