@@ -35,6 +35,7 @@ alias docker-unhash='unset DOCKER_CERT_PATH DOCKER_MACHINE_NAME DOCKER_TLS_VERIF
 # workspaces
 alias 360="tmuxinator start 360"
 alias rise="tmuxinator start rise"
+alias rise.com="tmuxinator start rise.com"
 
 alias fix-video='sudo killall VDCAssistant'
 
