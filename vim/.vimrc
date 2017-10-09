@@ -13,7 +13,9 @@ Plug 'tpope/vim-dispatch'
 Plug 'godlygeek/tabular'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+" let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_user_command = ['ag %s -l --hidden --nocolor -g ""']
+let g:ctrlp_use_caching = 0
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'ervandew/supertab'
