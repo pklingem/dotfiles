@@ -20,6 +20,7 @@ Plug 'rking/ag.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/syntastic'
+let g:syntastic_javascript_checkers=['eslint']
 Plug 'vim-scripts/ZoomWin'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'bronson/vim-trailing-whitespace'
