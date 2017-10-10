@@ -50,6 +50,9 @@ Plug 'mxw/vim-jsx'
 Plug 'digitaltoad/vim-jade'
 Plug 'mattn/emmet-vim'
 Plug 'ryanoasis/vim-devicons'
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
 Plug 'jiangmiao/auto-pairs'
 Plug 'leafgarland/typescript-vim'
