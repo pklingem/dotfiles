@@ -1,0 +1,13 @@
+map <leader>n :NERDTreeToggle<CR>
+map <leader>f :NERDTreeFind<CR>
+map <leader>z :ZoomWin<CR>
+map <leader>k :Explore<CR>
+map <leader>r :call Preserve("%!ramda-destruct")<CR>
+map <leader>q :q<CR>
+map <leader>s :w<CR>
+map <leader>r :%!ramda-destruct<CR>
+
+" Docker
+map <leader>k :%!docker-compose kill<CR>
+map <leader>b :%!docker-compose build<CR>
+map <leader>u :%!docker-compose up -d<CR>

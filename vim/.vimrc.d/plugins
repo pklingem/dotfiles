@@ -1,0 +1,77 @@
+call plug#begin()
+
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-fugitive'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'godlygeek/tabular'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'rking/ag.vim'
+Plug 'tpope/vim-unimpaired'
+Plug 'ervandew/supertab'
+Plug 'vim-scripts/ZoomWin'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'kchmck/vim-coffee-script'
+Plug 'elixir-lang/vim-elixir'
+Plug 'ap/vim-css-color'
+Plug 'tpope/vim-surround'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'vim-scripts/tlib'
+Plug 'garbas/vim-snipmate'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'vim-scripts/keepcase.vim'
+Plug 'xolox/vim-misc'
+Plug 'MarcWeber/vim-addon-local-vimrc'
+Plug 'tpope/vim-vinegar'
+Plug 'mattn/webapi-vim'
+Plug 'mattn/gist-vim'
+Plug 'sjl/vitality.vim'
+Plug 'mtth/scratch.vim'
+Plug 'tpope/vim-endwise'
+Plug 'ryanss/vim-hackernews'
+Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax'
+Plug 'mxw/vim-jsx'
+Plug 'digitaltoad/vim-jade'
+Plug 'mattn/emmet-vim'
+
+Plug 'xolox/vim-session'
+let g:session_autosave = 'no'
+let g:session_autoload = 'no'
+
+Plug 'tpope/vim-dispatch'
+autocmd FileType ruby let b:dispatch = 'bundle exec rspec %'
+autocmd FileType coffee let b:dispatch = 'bundle exec guard-jasmine --console=always %'
+nnoremap <F9> :Dispatch<CR>
+
+Plug 'scrooloose/nerdcommenter'
+let NERDSpaceDelims=1
+let NERDTreeMinimalUI=1
+
+Plug 'altercation/vim-colors-solarized'
+
+Plug 'airblade/vim-gitgutter'
+highlight clear SignColumn
+
+Plug 'scrooloose/syntastic'
+let g:syntastic_javascript_checkers=['eslint']
+
+Plug 'ctrlpvim/ctrlp.vim'
+" let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_user_command = ['ag %s -l --hidden --nocolor -g ""']
+let g:ctrlp_use_caching = 0
+
+Plug 'ryanoasis/vim-devicons'
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'leafgarland/typescript-vim'
+
+call plug#end()
+set background=dark
+colorscheme solarized

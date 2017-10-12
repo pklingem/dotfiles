@@ -1,0 +1,9 @@
+" Toggle paste with <leader>p
+nnoremap <leader>p :call PasteToggle()<cr>
+function! PasteToggle()
+    if &paste
+        setlocal nopaste
+    else
+        setlocal paste
+    endif
+endfunction
