@@ -7,9 +7,8 @@ root: ~/src/articulate
 # socket_name: foo
 
 # Runs before everything. Use it to start daemons etc.
-pre:
-  - docker-machine start default
-  - eval $(docker-machine env default)
+# pre:
+#   -
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
