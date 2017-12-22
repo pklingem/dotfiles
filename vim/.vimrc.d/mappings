@@ -3,9 +3,12 @@ map <leader>f :NERDTreeFind<CR>
 map <leader>z :ZoomWin<CR>
 map <leader>k :Explore<CR>
 map <leader>r :call Preserve("%!ramda-destruct")<CR>
-map <leader>q :q<CR>
-map <leader>s :w<CR>
+map <leader>q :qa<CR>
+map <leader>s <C-w>s
 map <leader>r :%!ramda-destruct<CR>
+map <leader>v <C-w>v
+map <leader>w :w<CR>
+map <leader>x :q<CR>
 
 " Docker
 map <leader>k :%!docker-compose kill<CR>
