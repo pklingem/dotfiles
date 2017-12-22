@@ -12,3 +12,5 @@ fonts/.local/share/heroku/*
 
 # vim
 vim/.vim/plugged
+vim/.vim/backup
+vim/.vim/swp
