@@ -4,6 +4,7 @@ export PATH=$PATH:~/.config/yarn/global/node_modules/.bin/
 export PATH="$HOME/.yarn/bin:$PATH"
 export AWS_FUZZ_USER="pklingemann"
 export VAULT_ADDR=http://vault-priv.dev.articulate.zone
+export NPM_TOKEN=`cat ~/.npmrc | tr "=" "\n" | tail -n 1`
 alias grep="grep --color=auto"
 alias aws-fuzzy-prod="AWS_DEFAULT_PROFILE=prod aws-fuzzy"
 
