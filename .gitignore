@@ -6,6 +6,7 @@ ssh/.ssh/known_hosts
 # tmux
 tmux/.tmux/plugins/*
 tmux/.tmux/resurrect/*
+tmux/.tmux/sidebar/directory_widths.txt
 
 # heroku
 fonts/.local/share/heroku/*
