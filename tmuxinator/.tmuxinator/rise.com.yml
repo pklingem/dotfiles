@@ -1,7 +1,7 @@
 # ~/.tmuxinator/360.yml
 
 name: rise
-root: ~/src/articulate
+root: ~/src/rise
 
 # Optional tmux socket
 # socket_name: foo
@@ -33,6 +33,7 @@ windows:
       root: ~/src/rise/skipper
       panes:
         - skipper:
+          - git pull
           - make start
         - private-resources:
           - cd ../private-resources
@@ -42,34 +43,49 @@ windows:
       root: ~/src/rise/rise-platform-frontend
       panes:
         - docker:
-          -
+          - docker-compose kill
+          - docker-compose rm -f
+          - docker-compose build --pull --no-cache
+          - docker-compose up
         - prompt:
           - git status
   - rise-api:
       root: ~/src/rise/rise-api
       panes:
         - docker:
-          -
+          - docker-compose kill
+          - docker-compose rm -f
+          - docker-compose build --pull --no-cache
+          - docker-compose up
         - prompt:
           - git status
-  - rise-gateway:
-      root: ~/src/rise/rise-gateway
+  - rise-com-gateway:
+      root: ~/src/rise/rise-com-gateway
       panes:
         - docker:
-          -
+          - docker-compose kill
+          - docker-compose rm -f
+          - docker-compose build --pull --no-cache
+          - docker-compose up
         - prompt:
           - git status
   - rise-frontend:
       root: ~/src/rise/rise-frontend
       panes:
         - docker:
-          -
+          - docker-compose kill
+          - docker-compose rm -f
+          - docker-compose build --pull --no-cache
+          - docker-compose up
         - prompt:
           - git status
   - rise-runtime:
       root: ~/src/rise/rise-runtime
       panes:
         - docker:
-          -
+          - docker-compose kill
+          - docker-compose rm -f
+          - docker-compose build --pull --no-cache
+          - docker-compose up
         - prompt:
           - git status
