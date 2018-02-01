@@ -1,7 +1,10 @@
 export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:~/.config/yarn/global/node_modules/.bin/
 export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR=vim
 export AWS_FUZZ_USER="pklingemann"
 export VAULT_ADDR=http://vault-priv.dev.articulate.zone
 export NPM_TOKEN=`cat ~/.npmrc | tr "=" "\n" | tail -n 1`
@@ -39,6 +42,12 @@ alias 360="tmuxinator start 360"
 alias rise="tmuxinator start rise"
 alias rise.com="tmuxinator start rise.com"
 
+# ls
+alias lsa="ls -lah"
+
+# nvim
+alias nvim="nvim -u ~/.nvim"
+
 alias fix-video='sudo killall VDCAssistant'
 
 git-freebase() {
@@ -58,11 +67,15 @@ concon () {
     "prod") profile=prod ;;
     "stage") profile=default ;;
   esac
-  ip=$(aws ec2 --profile $profile describe-instances --filters Name=tag:App,Values=$2 --query 'Reservations[0].Instances[0].PrivateIpAddress' --output text)
+  ip=$(aws ec2 --profile $profile describe-instances --filters "Name=tag:App,Values=$2" "Name=instance-state-name,Values=running" --query 'Reservations[0].Instances[0].PrivateIpAddress' --output text)
+  echo "connecting to $ip"
   ssh -t $ip concon ${@:3}
 }
 
-export NVM_DIR="/Users/patrick/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+killport() { kill -9 `lsof -i tcp:"$@" -Fp|tr -d p`;}
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="./node_modules/.bin:$PATH"
 
 source ~/.bashrc.`uname`
