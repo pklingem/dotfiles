@@ -6,35 +6,42 @@ Plug 'tpope/vim-fugitive'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'godlygeek/tabular'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'rking/ag.vim'
-Plug 'tpope/vim-unimpaired'
 Plug 'ervandew/supertab'
 Plug 'vim-scripts/ZoomWin'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'kchmck/vim-coffee-script'
-Plug 'elixir-lang/vim-elixir'
-Plug 'ap/vim-css-color'
 Plug 'tpope/vim-surround'
-Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'vim-scripts/tlib'
-Plug 'garbas/vim-snipmate'
-Plug 'Lokaltog/vim-easymotion'
 Plug 'vim-scripts/keepcase.vim'
 Plug 'xolox/vim-misc'
+Plug 'xolox/vim-easytags'
 Plug 'MarcWeber/vim-addon-local-vimrc'
-Plug 'tpope/vim-vinegar'
-Plug 'mattn/webapi-vim'
-Plug 'mattn/gist-vim'
-Plug 'sjl/vitality.vim'
-Plug 'mtth/scratch.vim'
-Plug 'tpope/vim-endwise'
-Plug 'ryanss/vim-hackernews'
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'mxw/vim-jsx'
 Plug 'digitaltoad/vim-jade'
-Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-endwise'
+Plug 'kchmck/vim-coffee-script'
+Plug 'elixir-lang/vim-elixir'
+Plug 'ap/vim-css-color'
+
+"Plug 'mattn/webapi-vim'
+"Plug 'mattn/gist-vim'
+"Plug 'sjl/vitality.vim'
+"Plug 'mtth/scratch.vim'
+"Plug 'mattn/emmet-vim'
+"Plug 'tpope/vim-unimpaired'
+"Plug 'MarcWeber/vim-addon-mw-utils'
+"Plug 'garbas/vim-snipmate'
+"Plug 'Lokaltog/vim-easymotion'
+
+Plug 'mileszs/ack.vim'
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
 
 Plug 'xolox/vim-session'
 let g:session_autosave = 'no'
@@ -54,8 +61,11 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'airblade/vim-gitgutter'
 highlight clear SignColumn
 
-Plug 'scrooloose/syntastic'
-let g:syntastic_javascript_checkers=['eslint']
+Plug 'w0rp/ale'
+let g:ale_linters = {'javascript': ['eslint']}
+let g:ale_fixers = {
+\  'javascript': ['eslint'],
+\}
 
 Plug 'ctrlpvim/ctrlp.vim'
 " let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
