@@ -32,6 +32,7 @@ export LESS="--RAW-CONTROL-CHARS"
 
 # tmux
 alias tmux="tmux -2"
+alias mux=tmuxinator
 
 # bundle
 alias be="bundle exec"
