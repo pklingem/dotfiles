@@ -16,3 +16,9 @@
 	clean = git-lfs clean %f
 [core]
 	ignorecase = false
+
+[url "git@github.com:"]
+  insteadOf = git://github.com/
+  insteadOf = https://github.com/
+  insteadOf = ssh://git@github.com/
+  insteadOf = git@github.com:
