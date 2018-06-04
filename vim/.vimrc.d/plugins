@@ -27,22 +27,14 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'ap/vim-css-color'
 Plug 'miyakogi/conoline.vim'
 
-"Plug 'mattn/webapi-vim'
-"Plug 'mattn/gist-vim'
-"Plug 'sjl/vitality.vim'
-"Plug 'mtth/scratch.vim'
-"Plug 'mattn/emmet-vim'
-"Plug 'tpope/vim-unimpaired'
-"Plug 'MarcWeber/vim-addon-mw-utils'
-"Plug 'garbas/vim-snipmate'
-"Plug 'Lokaltog/vim-easymotion'
-
 Plug 'mileszs/ack.vim'
 let g:ackprg = 'ag --vimgrep --smart-case'
 cnoreabbrev ag Ack
 cnoreabbrev aG Ack
 cnoreabbrev Ag Ack
 cnoreabbrev AG Ack
+
+Plug 'EvanDotPro/nerdtree-chmod'
 
 Plug 'xolox/vim-session'
 let g:session_autosave = 'no'
