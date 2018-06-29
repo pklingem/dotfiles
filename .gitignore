@@ -16,3 +16,6 @@ vim/.vim/plugged
 vim/.vim/backup
 vim/.vim/swp
 vim/.vim/.netrwhist
+
+# uuids (not sure where these come from, in Fedora somewhere)
+.uuid
