@@ -79,6 +79,8 @@ let g:NERDTreeSyntaxDisableDefaultExtensions = 1
 let g:NERDTreeDisableExactMatchHighlight = 1
 let g:NERDTreeDisablePatternMatchHighlight = 1
 let g:NERDTreeSyntaxEnabledExtensions = ['rb', 'js', 'css', 'json', 'yml', 'scss']
+" attempt to fix cursor lag
+let NERDTreeHighlightCursorline = 0
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'leafgarland/typescript-vim'
