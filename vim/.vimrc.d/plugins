@@ -25,6 +25,7 @@ Plug 'tpope/vim-endwise'
 Plug 'kchmck/vim-coffee-script'
 Plug 'elixir-lang/vim-elixir'
 Plug 'ap/vim-css-color'
+Plug 'miyakogi/conoline.vim'
 
 "Plug 'mattn/webapi-vim'
 "Plug 'mattn/gist-vim'

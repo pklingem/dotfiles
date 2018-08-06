@@ -14,4 +14,3 @@ source ~/.vimrc.d/variables
 source ~/.vimrc.d/mappings
 source ~/.vimrc.d/preserve
 source ~/.vimrc.d/paste
-source ~/.vimrc.d/line-highlighting
