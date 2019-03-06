@@ -69,6 +69,7 @@ alias lsa="ls -lah"
 alias nvim="nvim -u ~/.nvim"
 
 alias fix-video='sudo killall VDCAssistant'
+alias dorker="sudo iptables -F DOCKER-ISOLATION-STAGE-2"
 
 git-freebase() {
   set -e
