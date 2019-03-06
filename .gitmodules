@@ -3,7 +3,7 @@
 	url = git@github.com:seebi/dircolors-solarized
 [submodule "fonts/.local/share/fonts/Hack"]
 	path = fonts/.local/share/fonts/Hack
-	url = git@github.com:chrissimpkins/Hack.git
+	url = git@github.com:source-foundry/Hack.git
 [submodule "tmux/.tmux/plugins/tpm"]
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
