@@ -1,6 +1,7 @@
 [user]
 	email = patrick.klingemann@gmail.com
 	name = Patrick Klingemann
+	signingkey = 5CE9A2A9C5E2A5C3
 
 [color]
   ui = auto
@@ -22,3 +23,6 @@
   insteadOf = https://github.com/
   insteadOf = ssh://git@github.com/
   insteadOf = git@github.com:
+
+[commit]
+	gpgsign = true
