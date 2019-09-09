@@ -46,14 +46,14 @@ alias ga="git add ."
 alias gA="git add -A"
 alias gpf="git pull --ff-only"
 
+# art
+alias arto="art -on rise-stage "
+
 # docker
-alias doc="docker-compose"
-alias drm="docker-compose run --rm"
-alias drma="docker-compose run --rm app"
-alias dcbncp="docker-compose build --no-cache --pull"
-alias dbncp='docker-compose build --no-cache --pull'
-alias drm='docker-compose run --rm'
-alias dub='docker-compose up --build --force-recreate'
+alias doc="docker-compose "
+alias drm="docker-compose run --rm "
+alias drma="docker-compose run --rm app "
+alias dub="docker-compose up --build --force-recreate "
 
 # workspaces
 alias 360="tmuxinator start 360"
