@@ -10,6 +10,7 @@ export NPM_TOKEN=`cat ~/.npmrc | tr "=" "\n" | tail -n 1`
 alias grep="grep --color=auto"
 alias aws-fuzzy-prod="AWS_DEFAULT_PROFILE=prod aws-fuzzy"
 alias cat=bat
+alias gti=git
 
 # less, manpage coloring
 export LESS_TERMCAP_mb=$(tput bold; tput setaf 2) # green
