@@ -3,6 +3,8 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . $(brew --prefix)/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 ### NVM
 export NVM_DIR=~/.nvm
 . "/usr/local/opt/nvm/nvm.sh"
