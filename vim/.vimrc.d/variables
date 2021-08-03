@@ -35,3 +35,5 @@ set laststatus=2 " always show the statusline
 set mouse+=a
 set ttymouse=xterm2
 set scrolloff=5 " Prevent the cursor from moving to the edge of the window
+
+hi NonText ctermfg=bg guifg=bg
