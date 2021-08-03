@@ -84,7 +84,7 @@ let g:NERDTreeSyntaxEnabledExtensions = ['rb', 'js', 'css', 'json', 'yml', 'scss
 " attempt to fix cursor lag
 let NERDTreeHighlightCursorline = 0
 
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'leafgarland/typescript-vim'
 
 call plug#end()
