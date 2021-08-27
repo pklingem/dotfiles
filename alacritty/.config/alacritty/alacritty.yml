@@ -34,9 +34,6 @@ dpi:
   x: 331.0
   y: 331.0
 
-# Display tabs using this many cells (changes require restart)
-tabspaces: 8
-
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
 
@@ -82,7 +79,8 @@ font:
   use_thin_strokes: true
 
 # Should display the render timer
-render_timer: false
+debug:
+  render_timer: false
 
 # Colors (Solarized Dark)
 colors:
@@ -234,6 +232,7 @@ key_bindings:
   - { key: Back,     mods: Alt,     chars: "\x1b\x7f"                    }
   - { key: Insert,                  chars: "\x1b[2~"                     }
   - { key: Delete,                  chars: "\x1b[3~"                     }
+  - { key: Key6,     mods: Control, chars: "\x1e"                        }
 
 # Mouse bindings
 #
