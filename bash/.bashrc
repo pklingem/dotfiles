@@ -9,7 +9,6 @@ export AWS_FUZZ_USER="pklingemann"
 export NPM_TOKEN=`cat ~/.npmrc | tr "=" "\n" | tail -n 1`
 alias grep="grep --color=auto"
 alias aws-fuzzy-prod="AWS_DEFAULT_PROFILE=prod aws-fuzzy"
-alias cat=bat
 alias gti=git
 
 # less, manpage coloring
