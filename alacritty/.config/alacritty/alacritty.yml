@@ -30,6 +30,9 @@ window:
 
   decorations: None
 
+  # Background opacity
+  opacity: 1.0
+
 # The FreeType rasterizer needs to know the device DPI for best results
 # (changes require restart)
 dpi:
@@ -138,9 +141,6 @@ colors:
 bell:
   animation: EaseOutExpo
   duration: 0
-
-# Background opacity
-background_opacity: 1.0
 
 # Key bindings
 #
