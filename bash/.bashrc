@@ -1,9 +1,9 @@
-export PATH=/usr/local/bin:$PATH
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$PATH"
 export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:~/.config/yarn/global/node_modules/.bin/
-export PATH="$HOME/.yarn/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH=/usr/local/bin:$PATH
 export EDITOR=vim
 export AWS_FUZZ_USER="pklingemann"
 export NPM_TOKEN=`cat ~/.npmrc | tr "=" "\n" | tail -n 1`
@@ -98,3 +98,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="./node_modules/.bin:$PATH"
 
 source ~/.bashrc.`uname`
+source ~/.bashrc.local
