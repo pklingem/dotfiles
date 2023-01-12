@@ -1,7 +1,8 @@
+export PATH=$PATH:$(python3 -m site --user-base)/bin
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-. $(brew --prefix)/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
+. $(python3 -m site --user-site)/powerline/bindings/bash/powerline.sh
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
