@@ -17,9 +17,9 @@ env:
 window:
   # Window dimensions in character columns and lines
   # (changes require restart)
-  dimensions:
-    columns: 500
-    lines: 200
+  #dimensions:
+  #  columns: 500
+  #  lines: 200
 
   # Adds this many blank pixels of padding around the window
   # Units are physical pixels; this is not DPI aware.
@@ -32,12 +32,13 @@ window:
 
   # Background opacity
   opacity: 1.0
+  startup_mode: Maximized
 
 # The FreeType rasterizer needs to know the device DPI for best results
 # (changes require restart)
-dpi:
-  x: 331.0
-  y: 331.0
+#dpi:
+#  x: 331.0
+#  y: 331.0
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true

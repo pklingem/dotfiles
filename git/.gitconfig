@@ -1,7 +1,7 @@
 [user]
 	email = patrick.klingemann@gmail.com
 	name = Patrick Klingemann
-	signingkey = BD29D26D05748FA2
+	; signingkey = BD29D26D05748FA2
 
 [color]
   ui = auto
@@ -26,7 +26,8 @@
   insteadOf = git@github.com:
 
 [commit]
-	gpgSign = true
+	; gpgSign = true
+
 [init]
 	defaultBranch = main
 
