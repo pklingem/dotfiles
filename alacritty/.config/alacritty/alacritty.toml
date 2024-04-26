@@ -34,10 +34,6 @@ foreground = "0x839496"
 [debug]
 render_timer = false
 
-[dpi]
-x = 331.0
-y = 331.0
-
 [env]
 TERM = "xterm-256color"
 
@@ -45,15 +41,15 @@ TERM = "xterm-256color"
 size = 18.0
 
 [font.bold]
-family = "Hack Nerd Font"
+family = "Hack"
 style = "Bold"
 
 [font.italic]
-family = "Hack Nerd Font"
+family = "Hack"
 style = "Italic"
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "Hack"
 style = "Regular"
 
 [[keyboard.bindings]]
@@ -325,12 +321,6 @@ hide_when_typing = false
 [[mouse.bindings]]
 action = "PasteSelection"
 mouse = "Middle"
-
-[mouse.double_click]
-threshold = 300
-
-[mouse.triple_click]
-threshold = 300
 
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{}<>"
