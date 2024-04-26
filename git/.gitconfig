@@ -1,6 +1,7 @@
 [user]
 	email = patrick.klingemann@gmail.com
 	name = Patrick Klingemann
+	signingkey = BD29D26D05748FA2
 
 [color]
   ui = auto
