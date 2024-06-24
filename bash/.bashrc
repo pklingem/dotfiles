@@ -102,3 +102,4 @@ export PATH="./node_modules/.bin:$PATH"
 
 source ~/.bashrc.`uname`
 source ~/.bashrc.local
+source <(kubectl completion bash)
