@@ -1,11 +1,22 @@
 export PATH=$PATH:$(python3 -m site --user-base)/bin
+
+# powerline
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-. $(python3 -m site --user-site)/powerline/bindings/bash/powerline.sh
+. "$(python3 -m site --user-site)/powerline/bindings/bash/powerline.sh"
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-### NVM
-export NVM_DIR=~/.nvm
-. "/usr/local/opt/nvm/nvm.sh"
+#################
+eval "$(/opt/homebrew/bin/brew shellenv)"
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# gpg
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
