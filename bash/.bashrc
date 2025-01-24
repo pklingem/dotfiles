@@ -6,7 +6,7 @@ export PATH=$PATH:~/.config/yarn/global/node_modules/.bin/
 export PATH=/usr/local/bin:$PATH
 export EDITOR=vim
 export AWS_FUZZ_USER="pklingemann"
-export NPM_TOKEN=`cat ~/.npmrc | tr "=" "\n" | tail -n 1`
+export NPM_TOKEN=`grep "registry.npmjs.org" $HOME/.npmrc | awk -F '=' '{print $2}'`
 alias grep="grep --color=auto"
 alias aws-fuzzy-prod="AWS_DEFAULT_PROFILE=prod aws-fuzzy"
 alias gti=git
