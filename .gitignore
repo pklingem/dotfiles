@@ -19,3 +19,5 @@ vim/.vim/.netrwhist
 
 # uuids (not sure where these come from, in Fedora somewhere)
 .uuid
+
+.DS_Store
