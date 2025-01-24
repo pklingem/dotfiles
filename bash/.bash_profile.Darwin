@@ -3,6 +3,8 @@ export XDG_CONFIG_HOME=~/.config
 
 alias ls="ls -G"
 
+export PATH="$(brew --prefix)/opt/python@3/libexec/bin:$PATH"
+
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
