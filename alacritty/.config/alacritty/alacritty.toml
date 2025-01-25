@@ -40,15 +40,15 @@ TERM = "xterm-256color"
 size = 18.0
 
 [font.bold]
-family = "Hack Nerd Font"
+family = "Hack"
 style = "Bold"
 
 [font.italic]
-family = "Hack Nerd Font"
+family = "Hack"
 style = "Italic"
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "Hack"
 style = "Regular"
 
 [[keyboard.bindings]]
