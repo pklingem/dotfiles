@@ -41,17 +41,6 @@ TERM = "xterm-256color"
 size = 18.0
 
 [font.bold]
-<<<<<<< HEAD
-family = "Hack"
-style = "Bold"
-
-[font.italic]
-family = "Hack"
-style = "Italic"
-
-[font.normal]
-family = "Hack"
-=======
 family = "Hack Nerd Font"
 style = "Bold"
 
@@ -61,7 +50,6 @@ style = "Italic"
 
 [font.normal]
 family = "Hack Nerd Font"
->>>>>>> 1772c6f (migrate alacritty.yml to .toml)
 style = "Regular"
 
 [[keyboard.bindings]]
