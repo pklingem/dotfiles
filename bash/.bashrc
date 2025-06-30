@@ -103,3 +103,10 @@ export PATH="./node_modules/.bin:$PATH"
 source ~/.bashrc.`uname`
 source ~/.bashrc.local
 source <(kubectl completion bash)
+
+# fnm
+FNM_PATH="/home/patrick/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
