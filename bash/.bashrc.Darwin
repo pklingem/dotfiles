@@ -20,3 +20,7 @@ export NVM_DIR="$HOME/.nvm"
 # gpg
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
+
+# alacritty
+ALACRITTY_CONFIG_DIR="$HOME/.config/alacritty"
+ln -sf "$ALACRITTY_CONFIG_DIR/macos.toml" "$ALACRITTY_CONFIG_DIR/platform.toml"

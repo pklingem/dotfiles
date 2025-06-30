@@ -1,0 +1,11 @@
+[font.bold]
+family = "Hack"
+style = "Bold"
+
+[font.italic]
+family = "Hack"
+style = "Italic"
+
+[font.normal]
+family = "Hack"
+style = "Regular"

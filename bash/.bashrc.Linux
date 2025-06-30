@@ -12,3 +12,7 @@ source /etc/profile.d/bash_completion.sh
 eval `dircolors ~/.config/ls/dircolors-solarized/dircolors.256dark`
 
 alias ls="ls --color"
+
+## alacritty
+ALACRITTY_CONFIG_DIR="$HOME/.config/alacritty"
+ln -sf "$ALACRITTY_CONFIG_DIR/linux.toml" "$ALACRITTY_CONFIG_DIR/platform.toml"
