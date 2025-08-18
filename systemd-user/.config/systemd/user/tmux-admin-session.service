@@ -1,0 +1,12 @@
+[Unit]
+Description=Start tmux admin session
+After=kubelet.target
+
+[Service]
+Environment="HOME=/home/patrick"
+Environment="TERM=xterm-256color"
+ExecStart=/bin/bash -lc 'tmuxinator start admin'
+Restart=always
+
+[Install]
+WantedBy=default.target
