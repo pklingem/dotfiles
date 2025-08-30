@@ -94,7 +94,7 @@ concon () {
 killport() { kill -9 `lsof -i tcp:"$@" -Fp|tr -d p`;}
 
 ### k8s
-alias kubeupgrade='kubectl get deployments --all-namespaces -o=custom-columns=NAME:.metadata.name --no-headers | xargs kubectl rollout restart deployment'
+alias kubeupgrade='kubectl get deployments -o=custom-columns=NAME:.metadata.name --no-headers | xargs kubectl rollout restart deployment'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
