@@ -16,3 +16,7 @@ alias ls="ls --color"
 ## alacritty
 ALACRITTY_CONFIG_DIR="$HOME/.config/alacritty"
 ln -sf "$ALACRITTY_CONFIG_DIR/linux.toml" "$ALACRITTY_CONFIG_DIR/platform.toml"
+
+## asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+. <(asdf completion bash)
