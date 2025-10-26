@@ -4,6 +4,7 @@ export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 export PATH=$PATH:./node_modules/.bin
 export PATH=$PATH:~/.config/yarn/global/node_modules/.bin/
 export PATH=/usr/local/bin:$PATH
+export PATH=~/.local/bin:/usr/local/bin:$PATH
 export EDITOR=vim
 export AWS_FUZZ_USER="pklingemann"
 export NPM_TOKEN=`grep "registry.npmjs.org" $HOME/.npmrc | awk -F '=' '{print $2}'`
