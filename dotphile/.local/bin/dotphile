@@ -1,0 +1,152 @@
+#!/bin/sh
+
+platform=`uname`
+
+command -v stow >/dev/null 2>&1 || { echo >&2 "GNU stow is not installed.  Aborting."; exit 1; }
+if [ "$platform" = "Darwin" ]; then
+  command -v brew >/dev/null 2>&1 || { echo >&2 "brew is not installed.  Aborting."; exit 1; }
+  command -v gfind >/dev/null 2>&1 || { echo >&2 "brew findutils is not installed.  Aborting."; exit 1; }
+  alias find='gfind'
+fi
+
+# Use DOTPHILE_PATH environment variable or default to ~/dotfiles
+DOTFILES_DIR="${DOTPHILE_PATH:-$HOME/dotfiles}"
+
+# Use DOTPHILE_GIT_REPO environment variable or default to pklingem/dotfiles
+DOTFILES_GIT_REPO="${DOTPHILE_GIT_REPO:-git@github.com:pklingem/dotfiles}"
+
+add()
+{
+  package=$1
+  config=$2
+
+  # Validate inputs
+  if [ -z "$package" ]; then
+    echo >&2 "Error: Package name is required"
+    return 1
+  fi
+
+  if [ -z "$config" ]; then
+    echo >&2 "Error: Config path is required"
+    return 1
+  fi
+
+  # Safely expand tilde if present
+  case "$config" in
+    ~/*) config="$HOME/${config#~/}" ;;
+    ~) config="$HOME" ;;
+  esac
+
+  # Check if config file/directory exists
+  if [ ! -e "$config" ]; then
+    echo >&2 "Error: Configuration file or directory '$config' does not exist"
+    return 1
+  fi
+
+  PACKAGE_ROOT=$DOTFILES_DIR/$package
+  CONFIG_ROOT=$config
+  DOTFILES_PACKAGE_CONFIG_ROOT=${CONFIG_ROOT#$HOME/}
+  PACKAGE_CONFIGURATION_ROOT=$PACKAGE_ROOT/$DOTFILES_PACKAGE_CONFIG_ROOT
+
+  # Create destination directory
+  if ! mkdir -p "$(dirname "$PACKAGE_CONFIGURATION_ROOT")"; then
+    echo >&2 "Error: Failed to create directory $(dirname "$PACKAGE_CONFIGURATION_ROOT")"
+    return 1
+  fi
+
+  # Move the config file/directory
+  if ! mv "$config" "$(dirname "$PACKAGE_CONFIGURATION_ROOT")"; then
+    echo >&2 "Error: Failed to move '$config' to $(dirname "$PACKAGE_CONFIGURATION_ROOT")"
+    return 1
+  fi
+
+  echo "Added '$config' to package '$package' in $DOTFILES_DIR"
+}
+
+link()
+{
+  if ! stow $1 -d $DOTFILES_DIR 2>&1; then
+    echo >&2 "Error: Failed to link package '$1'. There may be conflicts with existing files."
+    echo >&2 "Run 'stow $1 -d $DOTFILES_DIR -n' to see what would be done."
+    return 1
+  fi
+  echo "Successfully linked package '$1'"
+}
+
+updateSubmodules()
+{
+  if ! (cd $DOTFILES_DIR && git submodule init && git submodule update); then
+    echo >&2 "Warning: Failed to update git submodules"
+    return 1
+  fi
+}
+
+linkAll()
+{
+  echo "Linking all packages from $DOTFILES_DIR..."
+  failed_packages=""
+
+  find $DOTFILES_DIR -maxdepth 1 -mindepth 1 -type d -printf '%f\n' |\
+    grep -E -v '^\..*$' |\
+    while read package; do
+      if stow "$package" -d $DOTFILES_DIR 2>&1; then
+        echo "  ✓ Linked $package"
+      else
+        echo "  ✗ Failed to link $package" >&2
+        failed_packages="$failed_packages $package"
+      fi
+    done
+
+  if [ -n "$failed_packages" ]; then
+    echo >&2 "Warning: Some packages failed to link:$failed_packages"
+    echo >&2 "There may be conflicts with existing files."
+  fi
+}
+
+args=`getopt la: $*`
+if [ $# -eq 0 ]; then
+  echo "Usage: dotphile [OPTION]"
+  echo ""
+  echo "Manage your dotfiles with GNU Stow and Git"
+  echo ""
+  echo "Options:"
+  echo "  -l, --link              Symlink all dotfiles packages to home directory"
+  echo "  -a, --add PACKAGE PATH  Add configuration file/directory to dotfiles package"
+  echo ""
+  echo "Environment Variables:"
+  echo "  DOTPHILE_PATH           Directory for dotfiles (default: ~/dotfiles)"
+  echo "  DOTPHILE_GIT_REPO       Git repository URL (default: git@github.com:pklingem/dotfiles)"
+  echo ""
+  echo "Examples:"
+  echo "  dotphile -l                    # Link all packages"
+  echo "  dotphile -a vim ~/.vimrc       # Add .vimrc to vim package"
+  echo "  DOTPHILE_PATH=~/my-dots dotphile -l"
+  exit 2
+fi
+
+if [ ! -d $DOTFILES_DIR ]; then
+  git clone $DOTFILES_GIT_REPO $DOTFILES_DIR
+fi
+
+set -- $args
+
+for i
+do
+  case "$i"
+  in
+    -l|--link)
+      updateSubmodules
+      linkAll
+
+      shift;;
+    -a|--add)
+      package="$2"; shift; config="$3"; shift;
+
+      add $package $config
+      link $package
+
+      shift;;
+    --)
+      shift; break;;
+  esac
+done
