@@ -66,6 +66,9 @@ alias lsa="ls -lah"
 # nvim
 alias nvim="nvim -u ~/.nvim"
 
+# terraform
+alias terraform="tofu"
+
 alias fix-video='sudo killall VDCAssistant'
 alias dorker="sudo iptables -F DOCKER-ISOLATION-STAGE-2"
 
